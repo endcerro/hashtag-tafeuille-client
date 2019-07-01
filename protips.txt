@@ -1,0 +1,28 @@
+Server : 
+
+Install NPM
+
+update config file
+
+node server.js
+
+Client : 
+
+Install ruby-bundler
+
+remove any gemfile.lock
+
+sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev
+
+bundle install 
+
+middleman run
+
+
+Pro tips : 
+
+Middleman serv can be killed as soon as the countdown started, giving you time to make the adjustements for the next round but leave the node serv running
+
+At the end of the countdown, kill node serv, launch middleman serv, refresh page (watch out for incmplete refreshes, ctrl F5 in firefox does the trick) and launch node serv when ready.
+
+Good luck, practice b4 prime time ! 
