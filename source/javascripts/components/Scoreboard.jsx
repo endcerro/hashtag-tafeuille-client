@@ -15,12 +15,9 @@ class Scoreboard extends React.Component {
 
     return (
       <div>
-
       <div className="overlay">
         <section id='scoreboard'>
-          <h1>Le public a voté !</h1>
-          <h2>#tafeuilleRose : <span className="bleu score">{this.props.blueCount} voix</span></h2>
-          <h2>#tafeuilleJaune : <span className="noir score">{this.props.blackCount} voix</span></h2>
+          <h1>Battle terminé !</h1>
         </section>
       </div>
       </div>

@@ -33,7 +33,7 @@ class Player extends React.Component {
 
         <div className="infos">
           <p className="name">{player.name}</p>
-          <p className="vote">Vote avec <span className="bold">#tafeuille{this.team()}</span></p>
+          <p className={'vote'+this.props.team}>Commente avec <span className={'bold'+this.props.team}><b>#tafeuille{this.team()}</b></span></p>
         </div>
 
 
@@ -48,7 +48,7 @@ class Player extends React.Component {
       team = 'Jaune';
     };
     if (this.props.team == 'blue') {
-      team = 'Rose'
+      team = 'Noire'
     };
     return team;
   }

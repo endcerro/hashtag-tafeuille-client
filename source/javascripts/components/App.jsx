@@ -13,7 +13,7 @@ class App extends React.Component {
       done: false,
       blueCount: 0,
       blackCount: 0,
-      timer: 300
+      timer: 240
     };
   }
 
@@ -23,6 +23,7 @@ class App extends React.Component {
 
   componentDidMount(){
     var self = this;
+    self.setState({timer: 240});
     var socket = io.connect('http://localhost:8080');
 
     socket.on('tweet', function (tweet) {
@@ -56,8 +57,8 @@ class App extends React.Component {
 
   render() {
     var players = this.props.players;
-    var player1 = players[14];
-    var player2 = players[3];
+    var player1 = players[0];
+    var player2 = players[1];
 
     return (
       <div>

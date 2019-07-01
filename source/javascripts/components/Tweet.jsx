@@ -1,6 +1,8 @@
 /*jshint esnext: true */
 
 class Tweet extends React.Component {
+
+
   render() {
     var tweet = this.props.tweet;
     var tweet_url = 'http://www.twitter.com/' + tweet.screenname + '/status/' + tweet.id_str;
@@ -10,7 +12,7 @@ class Tweet extends React.Component {
         <img className='avatar' src={tweet.avatar} />
         <span className='text'>
           <span className='name'>{tweet.author}</span>
-          <a href={tweet_url} target='_blank'>
+          <a classname='text' href={tweet_url} target='_blank'>
             <span className='screen-name'>@{tweet.screenname}</span>
           </a>
           <span className='content'>{tweet.body}</span>
